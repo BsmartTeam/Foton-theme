@@ -1,11 +1,18 @@
+//
 // Imports
+//
+@import "vendor/meyer-reset/reset";
+@import "vendor/bootstrap/bootstrap-grid";
+@import "variables";
 
+
+//
 // Styles
+//
 body {
-    
     width: 100vw;
     height: 100vh;
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/saas-rev-background-img-1.jpg);
     background-position: 50% 50%;
 }
 
@@ -25,9 +32,9 @@ nav {
 
         a {
             text-decoration: none;
-            color: white;
+            color: $white;
             padding: 20px;
-            font-family: Poppins, sans-serif;
+            font-family: $family, sans-serif;
             font-size: 13.5px;
             letter-spacing: .085em;
             line-height: 23px;
@@ -41,5 +48,4 @@ nav {
             }
         }
     }
-
 }
