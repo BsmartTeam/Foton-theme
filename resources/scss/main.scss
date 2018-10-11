@@ -15,7 +15,12 @@ body {
     background-image: url(../images/saas-rev-background-img-1.jpg);
     background-position: 50% 50%;
 }
-
+.section-title{
+    font-size: 45px;
+    color: $auxiliar;
+    text-transform: capitalize;
+    font-family: $family, sans-serif;
+}
 nav {
     position: relative;
 

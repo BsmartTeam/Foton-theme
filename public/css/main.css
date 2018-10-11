@@ -1951,6 +1951,13 @@ body {
   background-position: 50% 50%;
 }
 
+.section-title {
+  font-size: 45px;
+  color: #58468c;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+
 nav {
   position: relative;
 }
@@ -1966,9 +1973,9 @@ nav li {
 }
 nav li a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   padding: 20px;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 13.5px;
   letter-spacing: 0.085em;
   line-height: 23px;
