@@ -1951,6 +1951,15 @@ body {
   background-position: 50% 50%;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover, a:visited, a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
 .section-title {
   font-size: 45px;
   color: #58468c;
@@ -1972,8 +1981,6 @@ nav li {
   list-style-type: none;
 }
 nav li a {
-  text-decoration: none;
-  color: #fff;
   padding: 20px;
   font-family: "Poppins", sans-serif;
   font-size: 13.5px;
@@ -1982,8 +1989,38 @@ nav li a {
   text-transform: uppercase;
   font-weight: 600;
 }
-nav li a:hover, nav li a:visited, nav li a:active {
-  text-decoration: none;
+
+.rm-btn {
+  padding: 16px 37px;
+  border-radius: 4em;
+  border: 1px solid transparent;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: 0.125em;
+}
+
+.orng-btn {
+  background-color: #ff8a73;
+}
+.orng-btn:hover {
+  box-shadow: rgba(255, 138, 115, 0.5) 0px 10px 25px;
+}
+
+.dark-bl-btn {
+  background-color: #007bff;
+}
+.dark-bl-btn:hover {
+  box-shadow: rgba(85, 128, 255, 0.5) 0px 10px 25px;
+}
+
+.light-bl-btn {
+  background-color: #7bb9ff;
+}
+.light-bl-btn:hover {
+  box-shadow: rgba(85, 128, 255, 0.5) 0px 10px 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
