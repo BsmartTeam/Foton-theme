@@ -13,7 +13,7 @@ class flyBlock{
         $(window).scroll((e)=>{  this.levitate() }); //auto start levitate after rendering
     }
     pos_top(){ return document.getElementById(this.id).getBoundingClientRect().top }
-    setTimeout(){ this.timeout = setTimeout(()=>{clearInterval(this.interval)},300 )}
+    setTime(){ this.timeout = setTimeout(()=>{clearInterval(this.interval)},300 )}
     startMove(dir){
         if(dir){  $(`#${this.id}`).css('margin-top',`${this.marginTop -= this.speed}px`)}
         else{  $(`#${this.id}`).css('margin-top',`${this.marginTop += this.speed}px`)};
@@ -26,7 +26,7 @@ class flyBlock{
             clearTimeout(this.timeout);
             let dir = this.currY > this.lastY; // true move up, false move down
             this.interval =  setInterval(()=>{ this.startMove( dir ) },1);
-            this.setTimeout();            
+            this.setTime();            
         }
 		this.lastY = this.currY;
     }
