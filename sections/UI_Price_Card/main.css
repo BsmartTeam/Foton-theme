@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.section{
+    position: absolute;
+    margin-top: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ced4da !important;
+ }
+.price-card{
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-shadow: none;
+    transition: .5s;
+    overflow: hidden;
+ } 
+.price{
+  max-width: 100px;
+ }
+.price sup{
+    vertical-align: super;
+    bottom: 15px;
+    font-size: 24px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #58468c;
+}
+.price h4{
+  margin: 0;
+  vertical-align: middle;
+  padding: 15px 0;
+  color: #58468c;
+  font-size: 60px;
+}
+.price ul li:nth-child(2){
+    color: #716c80;
+    margin: 9px 0 0;
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.inner-info .title h1{
+    color: #5d4d8c;
+    font-weight: 400;
+    padding: 17px 0 0;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 0.5rem;
+}
+.inner-info .title span{
+    color: #5d4d8c;
+    padding: 12px 0 0;
+    font-size: 22px;
+    line-height: 26px;
+}
+.inner-info .title,
+.inner-info .options{
+    margin-bottom: 1.75rem;
+}
+.inner-info .options ul li{
+    color: #716c80;
+    padding: 4px 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+}
+.price-card:hover{
+    box-shadow: 0 10px 55px 5px rgba(137,173,255,.35);
+}
