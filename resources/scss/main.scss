@@ -9,54 +9,144 @@
 //
 // Styles
 //
-body {
+header {
     width: 100vw;
     height: 100vh;
     background-image: url(../images/saas-rev-background-img-1.jpg);
-    background-position: 50% 50%;
+    background-position: 61% 61%;
 }
 
-a{
+a {
     text-decoration: none;
     color: $white;
-    &:hover,&:visited, &:active {
+    padding: 20px;
+    font-family: Poppins,
+        sans-serif;
+    letter-spacing: 0.15em;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 800;
+
+    &:hover,
+    &:visited,
+    &:active {
         color: $white;
-       text-decoration: none;
+        text-decoration: none;
     }
+
+    &:hover::before {
+        color: $blue;
+        content: "\2022";
+        font-size: 20px;
+        left: 5px;
+        position: absolute;
+
+    }
+
+
 }
 
-.section-title{
+/*.section-title{
     font-size: 45px;
     color: $auxiliar;
     text-transform: capitalize;
     font-family: $family, sans-serif;
-}
+}*/
 nav {
-    position: relative;
+    //position: relative;
 
-    ul {
-        display: inline-flex;
+    ul.menu {
+        display: flex;
         float: right;
-        padding-right: 50px;
-        margin-top: 40px;
+        padding-right: 70px;
+        margin-top: 50px;
+
+        li.menu1 {
+            padding-bottom: 50px;
+        }
+
+        li {
+            position: relative;
+            cursor: pointer;
+            list-style: none;
+
+            &:hover ul {
+                display: block;
+                background-color: $white;
+                padding: 20px 40px 20px 10px;
+                margin-top: 50px;
+                border-radius: 10px;
+                width: 250px;
+
+                a {
+                    color: $auxiliar;
+                    font-family: 'Nunito', sans-serif;
+                    font-weight: 100;
+                    font-size: 13px;
+                    line-height: 3em;
+                    padding: 20px;
+
+                    letter-spacing: 0.1em;
+                }
+            }
+        }
+
     }
 
-    li {
-        cursor: pointer;
-        list-style-type: none;
+    ul.submenuLeft,
+    ul.submenuRight,
+    ul.container {
+        display: none;
+        position: absolute;
+    }
 
-        a {
-            padding: 20px;
-            font-family: $family, sans-serif;
-            font-size: 13.5px;
-            letter-spacing: .085em;
-            line-height: 23px;
-            text-transform: uppercase;
-            font-weight: 600;
+    ul.submenuLeft {
+        li:hover {
+            left: 15px;
         }
     }
-}
 
+    ul.menuEL {
+        &:hover {
+            display: flex;
+        }
+    }
+
+    ul.submenuRight {
+        left: -140px;
+
+        li {
+            display: block;
+            position: relative;
+            left: 20px;
+            float: right;
+            clear: right;
+
+            /*  &:hover::after{
+             color: $blue;
+             content:"\2022";
+             line-height: 23px;
+             font-weight: 700;
+             top: 200px;
+            }*/
+            a {
+                &:hover::before {
+                    content: none;
+                }
+
+                &:hover::after {
+                    color: $blue;
+                    content: "\2022";
+                    font-size: 20px;
+
+                }
+            }
+        }
+    }
+
+
+
+}
 // Buttons
 .rm-btn{ // Read More
     padding: 16px 37px;
