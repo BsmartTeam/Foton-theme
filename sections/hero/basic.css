@@ -1,0 +1,27 @@
+body {
+    /* background-color: #eef1fd; /* #21252B */    
+    color: #716c80;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    background-color: #ff8a73;
+}
+
+.container {
+    position: relative;
+    max-width: 1330px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.xy-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.column-wrapper {
+    padding: 0 15px;
+}

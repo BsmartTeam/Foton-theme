@@ -1,0 +1,66 @@
+.teaser-full-width {
+
+    .teaser-container {
+        display: flex;
+        align-items: center;
+
+        .teaser-content {
+            padding: 0px 50px 50px 38%;
+
+            h3.teaser-title {
+                color: #6a56a6;
+                /* $auxiliar */
+                font-size: 45px;
+                line-height: 1.22em;
+            }
+
+            p.teaser-text {
+                font-size: 20px;
+                line-height: 33px;
+                margin-top: 16px;
+                margin-bottom: 70px;
+            }
+        }
+    }
+}
+
+.factoids-full-width {
+
+    .factoids-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .card {
+            background-color: transparent;
+            display: flex;
+            margin-top: 20px;
+            padding: 2em;
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.35);
+                transform: translateY(-20px);
+            }
+
+            .factoids-content {
+                margin-left: 20px;
+
+                h4.factoids-title {
+                    color: #58468c;
+                    /* $auxiliar */
+                    font-size: 22px;
+                    line-height: 1.2em;
+                }
+
+                p.factoids-text {
+                    margin-top: 10px;
+                    font-size: 16px;
+                    line-height: 2em;
+                }
+            }
+        }
+    }
+}

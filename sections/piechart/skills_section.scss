@@ -1,0 +1,60 @@
+.skills {
+    
+    .card {
+        background-color: transparent;
+        /* background-color: #fff; */
+        display: flex;
+        flex-flow: column;
+        padding-top: 60px;
+        transition: all .3s;
+        text-align: center;
+
+        &:hover {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 10px 55px 5px rgba(137, 173, 255, .35);
+            transform: translateY(-20px);
+        }
+
+        canvas {
+            margin: 0 auto;
+        }
+
+        .card-text {
+            margin: 30px 40px 60px;
+        }
+
+        p {
+            margin-top: 12px;
+            line-height: 2em;
+            font-size: 15px;
+        }
+    }
+}
+
+.bst-piechart-circle {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.bst-pc-percent {
+    text-align: center;
+    font-size: 45px;
+    font-weight: normal;
+    color: #58468c;
+
+    &:after {
+        content: '%';
+        font-size: 22px;
+        position: relative;
+        top: -15px;
+    }
+}

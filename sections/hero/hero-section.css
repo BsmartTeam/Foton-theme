@@ -1,0 +1,26 @@
+.hero {
+  background-image: url(images/saas-rev-background-img-1.jpg);
+  background-size: auto;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.hero .hero-content {
+  padding: 195px 22% 0px 22%;
+  text-align: center;
+}
+.hero .hero-content h2.hero-title {
+  font-size: 55px;
+  line-height: 1.18em;
+  color: #fff;
+  /* $white */
+  margin-bottom: 20px;
+}
+.hero .hero-content button {
+  color: #fff;
+  padding: 12px 37px;
+  margin: 0px 7px 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=hero-section.css.map */
