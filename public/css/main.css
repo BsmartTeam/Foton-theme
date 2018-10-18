@@ -2100,25 +2100,25 @@ nav ul.submenuRight li a:hover::after {
 .help-block-advices {
   width: 100%;
   height: 98px;
-  background: url("../../public/images/icon-img-1.png") no-repeat;
+  background: url("/images/icon-img-1.png") no-repeat;
   background-position: center;
 }
 .help-block-support {
   width: 100%;
   height: 98px;
-  background: url("../../public/images/icon-img-2-1.png") no-repeat;
+  background: url("/images/icon-img-2-1.png") no-repeat;
   background-position: center;
 }
 .help-block-choice {
   width: 100%;
   height: 98px;
-  background: url("../../public/images/icon-img-3.png") no-repeat;
+  background: url("/images/icon-img-3.png") no-repeat;
   background-position: center;
 }
 .help-block-navigation {
   width: 100%;
   height: 98px;
-  background: url("../../public/images/icon-img-4.png") no-repeat;
+  background: url("/images/icon-img-4.png") no-repeat;
   background-position: center;
 }
 .help-block h4 {
@@ -2142,19 +2142,19 @@ nav ul.submenuRight li a:hover::after {
   box-shadow: 0px 3px 40px 0px #aed4ff;
 }
 .help-block:hover .help-block-advices {
-  background: url("../../public/images/icon-img-1h.png") no-repeat;
+  background: url("/images/icon-img-1h.png") no-repeat;
   background-position: center;
 }
 .help-block:hover .help-block-support {
-  background: url("../../public/images/icon-img-2.png") no-repeat;
+  background: url("/images/icon-img-2.png") no-repeat;
   background-position: center;
 }
 .help-block:hover .help-block-choice {
-  background: url("../../public/images/icon-img-3h.png") no-repeat;
+  background: url("/images/icon-img-3h.png") no-repeat;
   background-position: center;
 }
 .help-block:hover .help-block-navigation {
-  background: url("../../public/images/icon-img-4h.png") no-repeat;
+  background: url("/images/icon-img-4h.png") no-repeat;
   background-position: center;
 }
 
@@ -2185,22 +2185,22 @@ nav ul.submenuRight li a:hover::after {
   z-index: 5;
 }
 .sales_report #fly-block-big-2, .keep_track #fly-block-big-2 {
-  background: url("../../public/images/home-7-img-4.jpg") no-repeat center/cover;
+  background: url("/images/home-7-img-4.jpg") no-repeat center/cover;
   left: 10px;
   box-shadow: #e7ecfc 0px 10px 35px 5px;
 }
 .sales_report #fly-block-sm-2, .keep_track #fly-block-sm-2 {
-  background: url("../../public/images/home-7-img-3.jpg") no-repeat center/cover;
+  background: url("/images/home-7-img-3.jpg") no-repeat center/cover;
   box-shadow: #e7ecfc 10px 10px 35px 5px;
   right: 20px;
 }
 .sales_report #fly-block-big-1, .keep_track #fly-block-big-1 {
-  background: url("../../public/images/home-7-img-2.jpg") no-repeat center/cover;
+  background: url("/images/home-7-img-2.jpg") no-repeat center/cover;
   right: 5px;
   box-shadow: #e7ecfc 10px 10px 35px 5px;
 }
 .sales_report #fly-block-sm-1, .keep_track #fly-block-sm-1 {
-  background: url("../../public/images/home-7-img-1.jpg") no-repeat center/cover;
+  background: url("/images/home-7-img-1.jpg") no-repeat center/cover;
   left: 25px;
 }
 @media (max-width: 575px) {
