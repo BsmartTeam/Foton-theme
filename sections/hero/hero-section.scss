@@ -4,24 +4,45 @@
     background-position: bottom center;
     background-repeat: no-repeat;
 
-    .hero-content {
-        padding: 195px 22% 0px 22%;
-        text-align: center;
+    .hero-container {
+        padding: 190px 0 0;
 
-        h2.hero-title {
-            font-size: 55px;
-            line-height: 1.18em;
-            color: #fff; /* $white */
-            margin-bottom: 20px;
+        @media only screen {
+            @media (max-width: 480px) {
+                padding: 75px 0;
+            }
         }
 
-        button {
-            color: #fff;
-            padding: 12px 37px;
-            margin: 0px 7px 10px;
-            transition: .3s;
-            cursor: pointer;
+        .hero-content {
+            padding: 0 20%;
+            text-align: center;
+
+            @media only screen {
+                @media (max-width: 480px) {
+                    padding: 0 30px;
+                }
+            }
+
+            h2.hero-title {
+                font-size: 55px;
+                line-height: 1.18em;
+                color: #fff;
+                margin-bottom: 20px;
+
+                @media only screen {
+                    @media (max-width: 480px) {
+                        font-size: 1.75em;
+                    }
+                }
+            }
+
+            button {
+                color: #fff;
+                padding: 12px 37px;
+                margin: 0px 7px 10px;
+                transition: .3s;
+                cursor: pointer;
+            }
         }
     }
-   
 }

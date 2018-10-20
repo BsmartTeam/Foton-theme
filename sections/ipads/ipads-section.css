@@ -1,23 +1,9 @@
-.teaser-full-width .teaser-container {
-  display: flex;
-  align-items: center;
+.factoids-full-width {
+  padding: 50px 0;
 }
-.teaser-full-width .teaser-container .teaser-content {
-  padding: 0px 50px 50px 38%;
+.factoids-full-width .factoids-cover img {
+  width: 100%;
 }
-.teaser-full-width .teaser-container .teaser-content h3.teaser-title {
-  color: #6a56a6;
-  /* $auxiliar */
-  font-size: 45px;
-  line-height: 1.22em;
-}
-.teaser-full-width .teaser-container .teaser-content p.teaser-text {
-  font-size: 20px;
-  line-height: 33px;
-  margin-top: 16px;
-  margin-bottom: 70px;
-}
-
 .factoids-full-width .factoids-container {
   display: flex;
   flex-direction: column;
@@ -45,10 +31,56 @@
   font-size: 22px;
   line-height: 1.2em;
 }
+@media only screen and (max-width: 480px) {
+  .factoids-full-width .factoids-container .card .factoids-content h4.factoids-title {
+    font-size: 1.25em;
+  }
+}
 .factoids-full-width .factoids-container .card .factoids-content p.factoids-text {
   margin-top: 10px;
   font-size: 16px;
   line-height: 2em;
+}
+
+.teaser-full-width {
+  padding: 50px 0;
+}
+.teaser-full-width .teaser-cover img {
+  width: 100%;
+}
+.teaser-full-width .teaser-container {
+  display: flex;
+  align-items: center;
+}
+.teaser-full-width .teaser-container .teaser-content {
+  padding: 0px 50px 50px 30%;
+}
+@media only screen and (max-width: 1280px) {
+  .teaser-full-width .teaser-container .teaser-content {
+    padding: 0 30px 75px;
+  }
+}
+.teaser-full-width .teaser-container .teaser-content h3.teaser-title {
+  color: #6a56a6;
+  /* $auxiliar */
+  font-size: 45px;
+  line-height: 1.22em;
+}
+@media only screen and (max-width: 480px) {
+  .teaser-full-width .teaser-container .teaser-content h3.teaser-title {
+    font-size: 1.5em;
+  }
+}
+.teaser-full-width .teaser-container .teaser-content p.teaser-text {
+  font-size: 20px;
+  line-height: 33px;
+  margin-top: 16px;
+  margin-bottom: 70px;
+}
+@media only screen and (max-width: 480px) {
+  .teaser-full-width .teaser-container .teaser-content p.teaser-text {
+    font-size: 1em;
+  }
 }
 
 /*# sourceMappingURL=ipads-section.css.map */

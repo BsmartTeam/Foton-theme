@@ -1,9 +1,13 @@
 .bst-carousel {
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 0;
   box-sizing: content-box;
   width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .bst-carousel {
+    padding: 30px 30px;
+  }
 }
 .bst-carousel .slides {
   position: relative;
@@ -54,9 +58,19 @@
   left: 0%;
   transform: translateY(-50%);
 }
+@media only screen and (max-width: 480px) {
+  .bst-carousel div.prev {
+    padding-left: 30px;
+  }
+}
 .bst-carousel div.next {
   left: 100%;
   transform: translate(-100%, -50%);
+}
+@media only screen and (max-width: 480px) {
+  .bst-carousel div.next {
+    padding-right: 30px;
+  }
 }
 
 /*# sourceMappingURL=bst-carousel-slider.css.map */
