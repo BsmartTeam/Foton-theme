@@ -1,0 +1,26 @@
+.bst-piechart-circle {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.bst-pc-percent {
+    text-align: center;
+    font-size: 45px;
+    font-weight: normal;
+    color: $auxiliar;
+
+    &:after {
+        content: '%';
+        font-size: 22px;
+        position: relative;
+        top: -15px;
+    }
+}

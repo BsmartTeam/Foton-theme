@@ -1,14 +1,31 @@
 //
 // Imports
 //
-@import "vendor/meyer-reset/reset";
-@import "vendor/bootstrap/bootstrap-grid";
+@import "vendors";
 @import "variables";
+@import "sections";
 
 
 //
 // Styles
 //
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1330px;
+    }
+}
+
+body {
+    font-family: $family, sans-serif;
+}
+
+p{
+    font-family: $family;
+    font-size: 16px;
+    line-height: 2em;
+    color: $gray-600;
+}
+
 header {
     width: 100vw;
     height: 100vh;

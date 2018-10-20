@@ -1,0 +1,53 @@
+.factoids-full-width {
+    padding: 50px 0;
+
+    .factoids-cover {
+        img {
+            width: 100%;
+        }
+    }
+
+    .factoids-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .card {
+            background-color: transparent;
+            display: flex;
+            margin-top: 20px;
+            padding: 2em;
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.35);
+                transform: translateY(-20px);
+            }
+
+            .factoids-content {
+                margin-left: 20px;
+
+                h4.factoids-title {
+                    color: $auxiliar;
+                    /* $auxiliar */
+                    font-size: 22px;
+                    line-height: 1.2em;
+
+                    @media only screen {
+                        @media (max-width: 480px) {
+                            font-size: 1.25em;
+                        }
+                    }
+                }
+
+                p.factoids-text {
+                    margin-top: 10px;
+                    font-size: 16px;
+                    line-height: 2em;
+                }
+            }
+        }
+    }
+}

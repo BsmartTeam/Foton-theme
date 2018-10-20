@@ -1945,6 +1945,282 @@ html {
     align-self: stretch !important;
   }
 }
+.factoids-full-width {
+  padding: 50px 0;
+}
+.factoids-full-width .factoids-cover img {
+  width: 100%;
+}
+.factoids-full-width .factoids-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.factoids-full-width .factoids-container .card {
+  background-color: transparent;
+  display: flex;
+  margin-top: 20px;
+  padding: 2em;
+  transition: all 0.3s;
+}
+.factoids-full-width .factoids-container .card:hover {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.35);
+  transform: translateY(-20px);
+}
+.factoids-full-width .factoids-container .card .factoids-content {
+  margin-left: 20px;
+}
+.factoids-full-width .factoids-container .card .factoids-content h4.factoids-title {
+  color: #58468c;
+  /* $auxiliar */
+  font-size: 22px;
+  line-height: 1.2em;
+}
+@media only screen and (max-width: 480px) {
+  .factoids-full-width .factoids-container .card .factoids-content h4.factoids-title {
+    font-size: 1.25em;
+  }
+}
+.factoids-full-width .factoids-container .card .factoids-content p.factoids-text {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 2em;
+}
+
+.bst-carousel {
+  position: relative;
+  padding: 50px 0;
+  box-sizing: content-box;
+  width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .bst-carousel {
+    padding: 30px 30px;
+  }
+}
+.bst-carousel .slides {
+  position: relative;
+  height: 100%;
+}
+.bst-carousel img {
+  position: absolute;
+  transition: 0.5s;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(50% - 20px);
+}
+.bst-carousel img.shadow, .bst-carousel img.left.shadow, .bst-carousel img.right.shadow {
+  box-shadow: 0 10px 30px 0 rgba(100, 117, 156, 0.45);
+}
+.bst-carousel img.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+.bst-carousel img.center.shadow {
+  box-shadow: 0 10px 55px 0 rgba(137, 173, 255, 0.45);
+}
+.bst-carousel img.left {
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  width: calc(50% - 20px);
+}
+.bst-carousel img.right {
+  top: 50%;
+  left: 100%;
+  transform: translate(-100%, -50%);
+  width: calc(50% - 10px);
+}
+.bst-carousel div.prev, .bst-carousel div.next {
+  position: absolute;
+  top: 50%;
+  width: 15%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 100;
+}
+.bst-carousel div.prev {
+  left: 0%;
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 480px) {
+  .bst-carousel div.prev {
+    padding-left: 30px;
+  }
+}
+.bst-carousel div.next {
+  left: 100%;
+  transform: translate(-100%, -50%);
+}
+@media only screen and (max-width: 480px) {
+  .bst-carousel div.next {
+    padding-right: 30px;
+  }
+}
+
+.hero {
+  background-image: url("/images/saas-rev-background-img-1.jpg");
+  background-size: auto;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.hero .hero-container {
+  padding: 190px 0 0;
+}
+@media only screen and (max-width: 480px) {
+  .hero .hero-container {
+    padding: 75px 0;
+  }
+}
+.hero .hero-container .hero-content {
+  padding: 0 20%;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  .hero .hero-container .hero-content {
+    padding: 0 30px;
+  }
+}
+.hero .hero-container .hero-content h2.hero-title {
+  font-size: 55px;
+  line-height: 1.18em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 480px) {
+  .hero .hero-container .hero-content h2.hero-title {
+    font-size: 1.75em;
+  }
+}
+.hero .hero-container .hero-content button {
+  color: #fff;
+  padding: 12px 37px;
+  margin: 0px 7px 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.bst-piechart-circle {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+.bst-piechart-circle canvas {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bst-pc-percent {
+  text-align: center;
+  font-size: 45px;
+  font-weight: normal;
+  color: #58468c;
+}
+.bst-pc-percent:after {
+  content: "%";
+  font-size: 22px;
+  position: relative;
+  top: -15px;
+}
+
+.skills .card {
+  background-color: transparent;
+  /* background-color: #fff; */
+  display: flex;
+  flex-flow: column;
+  margin: 30px 0;
+  padding-top: 60px;
+  transition: all 0.3s;
+  text-align: center;
+}
+.skills .card:hover {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.35);
+  transform: translateY(-20px);
+}
+.skills .card canvas {
+  margin: 0 auto;
+}
+.skills .card .card-text {
+  margin: 30px 40px 60px;
+}
+.skills .card .card-text h4 {
+  font-size: 22px;
+  line-height: 1.45em;
+  color: #58468c;
+}
+.skills .card .card-text p {
+  margin-top: 12px;
+  line-height: 2em;
+  font-size: 15px;
+}
+
+.teaser-full-width {
+  padding: 50px 0;
+}
+.teaser-full-width .teaser-cover img {
+  width: 100%;
+}
+.teaser-full-width .teaser-container {
+  display: flex;
+  align-items: center;
+}
+.teaser-full-width .teaser-container .teaser-content {
+  padding: 0px 50px 50px 30%;
+}
+@media only screen and (max-width: 1280px) {
+  .teaser-full-width .teaser-container .teaser-content {
+    padding: 0 30px 75px;
+  }
+}
+.teaser-full-width .teaser-container .teaser-content h3.teaser-title {
+  color: #58468c;
+  /* $auxiliar */
+  font-size: 45px;
+  line-height: 1.22em;
+}
+@media only screen and (max-width: 480px) {
+  .teaser-full-width .teaser-container .teaser-content h3.teaser-title {
+    font-size: 1.5em;
+  }
+}
+.teaser-full-width .teaser-container .teaser-content p.teaser-text {
+  font-size: 20px;
+  line-height: 33px;
+  margin-top: 16px;
+  margin-bottom: 70px;
+}
+@media only screen and (max-width: 480px) {
+  .teaser-full-width .teaser-container .teaser-content p.teaser-text {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1330px;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 2em;
+  color: #6c757d;
+}
+
 header {
   width: 100vw;
   height: 100vh;

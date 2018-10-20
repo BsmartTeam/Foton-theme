@@ -1,0 +1,50 @@
+@import "bst-carousel-slider";
+
+.hero {
+    background-image: url("/images/saas-rev-background-img-1.jpg");
+    background-size: auto;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+
+    .hero-container {
+        padding: 190px 0 0;
+
+        @media only screen {
+            @media (max-width: 480px) {
+                padding: 75px 0;
+            }
+        }
+
+        .hero-content {
+            padding: 0 20%;
+            text-align: center;
+
+            @media only screen {
+                @media (max-width: 480px) {
+                    padding: 0 30px;
+                }
+            }
+
+            h2.hero-title {
+                font-size: 55px;
+                line-height: 1.18em;
+                color: $white;
+                margin-bottom: 20px;
+
+                @media only screen {
+                    @media (max-width: 480px) {
+                        font-size: 1.75em;
+                    }
+                }
+            }
+
+            button {
+                color: $white;
+                padding: 12px 37px;
+                margin: 0px 7px 10px;
+                transition: .3s;
+                cursor: pointer;
+            }
+        }
+    }
+}
